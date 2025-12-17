@@ -31,11 +31,13 @@ Make sure you have the following installed:
 git clone <your-repo-url>
 cd employee-management
 
+---
 
 Install dependencies:
 ```bash
 pip install -r requirements.txt
 
+---
 
 Configure the database
 
@@ -44,6 +46,7 @@ Configure the database
 ```bash
 CREATE DATABASE ems_db;
 
+---
 
 Project Structure
 employee-management-system/
@@ -61,7 +64,7 @@ employee-management-system/
 ├── requirements.txt        # Dependencies
 └── README.md
 
-
+---
 
 Global Exception Handling
 
@@ -74,12 +77,13 @@ def register_error_handlers(app):
     def handle_exception(e):
         return jsonify({"error": str(e)}), 400
 
-
+---
 
 Running the Application:
 ```bash
 python -m app.main
 
+---
 
 Testing APIs in Postman
     1. Open Postman.
@@ -92,14 +96,14 @@ Testing APIs in Postman
     PUT	                /employees/<id>	           Update employee info
     DELETE	            /employees/<id>	           Delete employee
 
-
+---
 
 Running Unit Tests
 Unit tests are written using pytest
 ```bash
 python -m pytest
 
-
+---
 
 Understanding the Code
 
