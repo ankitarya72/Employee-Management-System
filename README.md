@@ -27,13 +27,13 @@ Make sure you have the following installed:
 ## Project Setup
 
 ### 1. Clone the repository
-git clone <your-repo-url>
-cd employee-management
+    git clone <your-repo-url>
+    cd employee-management
 
 ---
 
 ## Install dependencies:
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ---
 
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 1. Open MySQL/PostgreSQL.
 2. Create a database:
-CREATE DATABASE ems_db;
+    CREATE DATABASE ems_db;
 
 ---
 
@@ -66,7 +66,7 @@ employee-management-system/
 ## Global Exception Handling:
 
 Instead of writing try-except in every API, we have a global exception handler:
-# app/error_handlers.py
+app/error_handlers.py
 from flask import jsonify
 
 def register_error_handlers(app):
@@ -77,13 +77,13 @@ def register_error_handlers(app):
 ---
 
 ## Running the Application:
-python -m app.main
+    python -m app.main
 
 ---
 
 ## Testing APIs in Postman
-    1. Open Postman.
-    2. Use these endpoints:
+1. Open Postman.
+2. Use these endpoints:
     
     Method	            Endpoint	               Description
     POST                /employees	               Create a new employee
@@ -96,7 +96,7 @@ python -m app.main
 
 ## Running Unit Tests
 Unit tests are written using pytest
-python -m pytest
+    python -m pytest
 
 ---
 
