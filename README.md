@@ -33,6 +33,13 @@ cd employee-management
 
 ---
 
+## Project Setup
+
+### 1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd employee-management
+
 ## Install dependencies:
 ```bash
 pip install -r requirements.txt
