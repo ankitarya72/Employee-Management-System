@@ -65,7 +65,8 @@ employee-management-system/
 
 ## Global Exception Handling:
 
-Instead of writing try-except in every API, we have a global exception handler:
+# Instead of writing try-except in every API, we have a global exception handler:
+
     app/error_handlers.py
     from flask import jsonify
     def register_error_handlers(app):
