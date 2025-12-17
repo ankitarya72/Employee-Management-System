@@ -68,7 +68,6 @@ employee-management-system/
 Instead of writing try-except in every API, we have a global exception handler:
     app/error_handlers.py
     from flask import jsonify
-    
     def register_error_handlers(app):
         @app.errorhandler(Exception)
         def handle_exception(e):
