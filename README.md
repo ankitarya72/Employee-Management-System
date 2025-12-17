@@ -39,8 +39,8 @@ Make sure you have the following installed:
 
 ## Configure the database:
 
-1. Open MySQL/PostgreSQL.
-2. Create a database:
+Open MySQL/PostgreSQL.
+Create a database:
     CREATE DATABASE ems_db;
 
 ---
@@ -66,13 +66,13 @@ employee-management-system/
 ## Global Exception Handling:
 
 Instead of writing try-except in every API, we have a global exception handler:
-app/error_handlers.py
-from flask import jsonify
-
-def register_error_handlers(app):
-    @app.errorhandler(Exception)
-    def handle_exception(e):
-        return jsonify({"error": str(e)}), 400
+    app/error_handlers.py
+    from flask import jsonify
+    
+    def register_error_handlers(app):
+        @app.errorhandler(Exception)
+        def handle_exception(e):
+            return jsonify({"error": str(e)}), 400
 
 ---
 
@@ -82,8 +82,8 @@ def register_error_handlers(app):
 ---
 
 ## Testing APIs in Postman
-1. Open Postman.
-2. Use these endpoints:
+Open Postman.
+Use these endpoints:
     
     Method	            Endpoint	               Description
     POST                /employees	               Create a new employee
