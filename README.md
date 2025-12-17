@@ -33,7 +33,7 @@ cd employee-management
 
 ---
 
-Install dependencies:
+## Install dependencies:
 ```bash
 pip install -r requirements.txt
 
