@@ -40,7 +40,9 @@ Make sure you have the following installed:
 ## Configure the database:
 
 Open MySQL/PostgreSQL.
+
 Create a database:
+
     CREATE DATABASE ems_db;
 
 ---
