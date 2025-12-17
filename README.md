@@ -46,20 +46,20 @@ Create a database:
 ---
 
 ## Project Structure:
-employee-management-system/
-│
-├── app/
-│   ├── controllers/        # Flask routes
-│   ├── services/           # Business logic
-│   ├── repository/         # Database operations
-│   ├── models/             # Database models
-│   ├── tests/              # Unit tests
-│   ├── database.py         # DB connection setup
-│   └── error_handlers.py   # Global exception handlers
-│
-├── init_db.py              # Script to create tables
-├── requirements.txt        # Dependencies
-└── README.md
+    employee-management-system/
+    │
+    ├── app/
+    │   ├── controllers/        # Flask routes
+    │   ├── services/           # Business logic
+    │   ├── repository/         # Database operations
+    │   ├── models/             # Database models
+    │   ├── tests/              # Unit tests
+    │   ├── database.py         # DB connection setup
+    │   └── error_handlers.py   # Global exception handlers
+    │
+    ├── init_db.py              # Script to create tables
+    ├── requirements.txt        # Dependencies
+    └── README.md
 
 ---
 
