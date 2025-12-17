@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 ---
 
-Configure the database
+## Configure the database:
 
 1. Open MySQL/PostgreSQL.
 2. Create a database:
@@ -45,7 +45,7 @@ CREATE DATABASE ems_db;
 
 ---
 
-Project Structure
+## Project Structure:
 employee-management-system/
 │
 ├── app/
@@ -63,7 +63,7 @@ employee-management-system/
 
 ---
 
-Global Exception Handling
+## Global Exception Handling:
 
 Instead of writing try-except in every API, we have a global exception handler:
 # app/error_handlers.py
@@ -76,12 +76,12 @@ def register_error_handlers(app):
 
 ---
 
-Running the Application:
+## Running the Application:
 python -m app.main
 
 ---
 
-Testing APIs in Postman
+## Testing APIs in Postman
     1. Open Postman.
     2. Use these endpoints:
     
@@ -94,13 +94,13 @@ Testing APIs in Postman
 
 ---
 
-Running Unit Tests
+## Running Unit Tests
 Unit tests are written using pytest
 python -m pytest
 
 ---
 
-Understanding the Code
+## Understanding the Code
 
 Controllers: Accept API requests and call service functions.
 Example: employee_controller.py → create_employee() calls EmployeeService.create_employee().
