@@ -27,7 +27,7 @@ Make sure you have the following installed:
 ## Project Setup
 
 ### 1. Clone the repository
-    git clone <https://github.com/ankitarya72/Employee-Management-System.git>
+    git clone https://github.com/ankitarya72/Employee-Management-System.git
     cd employee-management
 
 ---
